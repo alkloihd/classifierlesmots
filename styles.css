@@ -1,0 +1,105 @@
+body {
+    background-color: #000; /* Black background */
+    color: #fff; /* White text */
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+#welcome-screen, #game-screen, #result-screen {
+    padding: 20px;
+}
+
+#sentence {
+    font-size: 24px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+#sentence .word {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 5px;
+}
+
+#sentence .draggable {
+    background-color: #333;
+    cursor: move;
+    border-radius: 5px;
+}
+
+#bins {
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.bin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+}
+
+.bin {
+    width: 150px;
+    min-height: 150px;
+    padding: 10px;
+    border: 2px dashed #fff; /* White border */
+    border-radius: 5px;
+    overflow-y: auto;
+    color: #fff; /* White text inside bins */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bin-label {
+    margin-top: 5px;
+    font-weight: bold;
+    color: #fff; /* White text */
+}
+
+#submit-button, #play-button, #retry-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    margin-top: 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+}
+
+#submit-button:hover, #play-button:hover, #retry-button:hover {
+    background-color: #555;
+}
+
+.correct-flash {
+    animation: correctFlash 0.5s;
+}
+
+.incorrect-flash {
+    animation: incorrectFlash 0.5s;
+}
+
+@keyframes correctFlash {
+    0% { background-color: #000; }
+    50% { background-color: #28a745; } /* Green */
+    100% { background-color: #000; }
+}
+
+@keyframes incorrectFlash {
+    0% { background-color: #000; }
+    50% { background-color: #dc3545; } /* Red */
+    100% { background-color: #000; }
+}
+
+/* Ensure words inside bins are displayed properly */
+.bin .word {
+    margin: 5px 0;
+    background-color: #555; /* Darker background in bins */
+    cursor: move;
+}

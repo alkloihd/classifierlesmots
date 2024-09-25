@@ -960,19 +960,6 @@ const sentences = [
         ]
     },
     {
-        text: "Le vent fort souffle à travers les arbres.",
-        words: [
-            { word: "Le", type: null },
-            { word: "vent", type: "nom" },
-            { word: "fort", type: "adjectif" },
-            { word: "souffle", type: "verbe" },
-            { word: "à", type: null },
-            { word: "travers", type: null },
-            { word: "les", type: null },
-            { word: "arbres", type: "nom" },
-        ]
-    },
-    {
         text: "La rivière calme reflète le ciel bleu.",
         words: [
             { word: "La", type: null },

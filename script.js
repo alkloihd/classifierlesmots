@@ -2715,7 +2715,7 @@ const sentences = [
             { word: "L'", type: null },
             { word: "oiseau", type: "nom" },
             { word: "vole", type: "verbe" },
-            { word: "haut", type: "adverbe" }
+            { word: "haut", type: "adjectif" }
         ]
     },
     {
